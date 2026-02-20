@@ -4,113 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>João Streibel</title>
-  <style>
-    :root {
-      --bg-deep: #062f43;
-      --bg-ocean: #0a5f7a;
-      --bg-emerald: #0f7f6f;
-      --bg-grass: #4f9d3a;
-      --ink: #082638;
-      --accent: #0f7f6f;
-      --paper: #e8f8f2;
-      --card: #f5fffb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 12% 16%, rgba(109, 208, 177, 0.28), transparent 36%),
-        radial-gradient(circle at 88% 82%, rgba(104, 191, 72, 0.32), transparent 34%),
-        linear-gradient(140deg, var(--bg-deep) 4%, var(--bg-ocean) 48%, var(--bg-emerald) 100%);
-      color: var(--ink);
-      font-family: "Trebuchet MS", "Avenir Next", "Century Gothic", sans-serif;
-      display: grid;
-      place-items: center;
-      padding: 2rem 1rem;
-    }
-
-    main {
-      width: min(880px, 100%);
-      background: var(--paper);
-      border: 2px solid rgba(10, 95, 122, 0.28);
-      border-radius: 20px;
-      padding: clamp(1.5rem, 3vw, 3rem);
-      box-shadow: 0 20px 50px rgba(2, 33, 48, 0.32);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 7vw, 4rem);
-      letter-spacing: 0.03em;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-
-    .tagline {
-      margin: 0.8rem 0 1.4rem;
-      font-size: clamp(1.05rem, 2.5vw, 1.45rem);
-      color: var(--bg-grass);
-      font-weight: 700;
-    }
-
-    .lead {
-      margin: 0 0 1.8rem;
-      max-width: 58ch;
-      font-size: 1.05rem;
-      line-height: 1.65;
-    }
-
-    .grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      margin-bottom: 1.8rem;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid rgba(10, 95, 122, 0.2);
-      border-radius: 14px;
-      padding: 1rem;
-    }
-
-    h2 {
-      margin: 0 0 0.5rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-    }
-
-    p {
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    .footer {
-      padding-top: 1rem;
-      border-top: 1px dashed rgba(10, 95, 122, 0.35);
-      font-size: 0.95rem;
-    }
-
-    a {
-      color: var(--ink);
-      font-weight: 700;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 0.12em;
-    }
-
-    a:hover {
-      color: var(--bg-grass);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-home">
   <main>
     <h1>João Streibel</h1>
     <p class="tagline">One passionate about the World</p>
@@ -145,7 +41,7 @@
       </article>
     </section>
 
-    <p class="footer">All words written by a human (that's me). This page is intentionally simple and fully static, built with pure HTML.</p>
+    <p class="footer">All words written by a human (that's me). This page is intentionally simple and fully static, built on good ol' days HTML+CSS.</p>
   </main>
 </body>
 </html>
