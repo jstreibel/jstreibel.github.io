@@ -1,17 +1,18 @@
 export default function AboutPage() {
   return <>
     <h1>Greetings</h1>
-    And welcome.
+    and welcome.
 
     <br></br><br></br>
 
     I'm a software engineer with a PhD in Physics.
-    While I love tweaking stuff, learning new things and having little side-projects,
-    my medium-long term focus is set on expanding my experience and knowledge base
-    into Machine Learning.
 
     <br></br><br></br>
 
-    A few years ago, while researching aspects of thermal systems,
+    While I love tweaking stuff, learning new things and having little side-projects,
+    my medium- to long-term focus is on Machine Learning, where I'm set to expand my
+    experience and knowledge into.
+
+    <br></br><br></br>
     </>
 }
