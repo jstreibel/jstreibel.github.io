@@ -1,13 +1,13 @@
 :root {
-  --bg-deep: #062f43;
-  --bg-ocean: #0a5f7a;
-  --bg-emerald: #0f7f6f;
-  --bg-grass: #4f9d3a;
-  --paper: #e8f8f2;
-  --card: #f5fffb;
-  --ink: #082638;
-  --ink-soft: #295264;
-  --accent-deep: #0f7f6f;
+  --color-red: #821d30;
+  --color-yellow: #ed9e00;
+  --color-green: #458e23;
+  --color-blue: #1746a2;
+  --color-white: #f4f1e8;
+  --color-black: #111318;
+
+  --bg: var(--color-white);
+  --text: var(--color-black);
 }
 
 *,
@@ -18,44 +18,25 @@
 
 html {
   min-height: 100%;
-  color-scheme: light;
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  color: var(--ink);
-  font-family: "Avenir Next", "Trebuchet MS", "Century Gothic", sans-serif;
-  background:
-    radial-gradient(circle at 12% 16%, rgba(109, 208, 177, 0.28), transparent 34%),
-    radial-gradient(circle at 88% 82%, rgba(104, 191, 72, 0.26), transparent 32%),
-    linear-gradient(140deg, var(--bg-deep) 4%, var(--bg-ocean) 48%, var(--bg-emerald) 100%);
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 26%),
-    radial-gradient(circle at 78% 18%, rgba(79, 157, 58, 0.12), transparent 20%);
-  animation: glow-drift 18s ease-in-out infinite alternate;
+  color: var(--text);
+  background: var(--bg);
 }
 
 #root {
-  position: relative;
-  isolation: isolate;
+  min-height: 100vh;
 }
 
-a {
-  color: inherit;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.12em;
-}
-
-a:hover {
-  color: var(--bg-grass);
+#root::before {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 2px;
+  content: '';
+  background: var(--color-black);
 }
 
 button,
@@ -63,18 +44,4 @@ input,
 textarea,
 select {
   font: inherit;
-}
-
-::selection {
-  background: rgba(79, 157, 58, 0.24);
-}
-
-@keyframes glow-drift {
-  from {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-
-  to {
-    transform: translate3d(0, -1.5%, 0) scale(1.02);
-  }
 }
