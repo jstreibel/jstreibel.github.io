@@ -5,5 +5,5 @@ export default function BlankPage() {
     document.title = 'João Streibel';
   }, []);
 
-  return null;
+  return <div className="page-rule" aria-hidden="true" />;
 }
