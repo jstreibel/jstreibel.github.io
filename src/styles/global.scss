@@ -42,9 +42,25 @@ body {
   pointer-events: none;
 }
 
+.main-image {
+  position: fixed;
+  left: 3vw;
+  top: 5vh;
+  width: clamp(10rem, 15vw, 22rem);
+  height: auto;
+}
+
+.corner-image {
+  position: fixed;
+  right: 3vw;
+  bottom: 3vh;
+  width: clamp(10rem, 10vw, 22rem);
+  height: auto;
+}
+
 .page-nav {
     position: fixed;
-    top: -10vh;
+    top: 10vh;
     left: 4vw;
     height: 100vh;
     display: grid;
@@ -58,7 +74,7 @@ body {
 }
 
 .page-content {
-  width: 20vw;
+  width: 80vw;
   min-height: 100vh;
   padding: 8vh 25vw;
 }

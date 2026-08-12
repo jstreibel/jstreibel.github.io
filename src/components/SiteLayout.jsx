@@ -1,5 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
 
+import jojoPapaImage from '../assets/jojo-papa.png';
+import calvinImage from '../assets/calvin.webp';
+
 export default function SiteLayout() {
   return (
     <>
@@ -14,6 +17,8 @@ export default function SiteLayout() {
       </main>
 
       <div className="page-rule" aria-hidden="true" />
+      <img className="main-image" src={jojoPapaImage} alt="Calvin" />
+      <img className="corner-image" src={calvinImage} alt="Calvin" />
     </>
   );
 }
