@@ -1,0 +1,35 @@
+{
+  "name": "jstreibel.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Joao Streibel personal site rebuilt with React, Redux Toolkit, and Sass modules.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstreibel/jstreibel.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstreibel/jstreibel.github.io/issues"
+  },
+  "homepage": "https://github.com/jstreibel/jstreibel.github.io#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.30.3",
+    "sass": "^1.98.0"
+  }
+}

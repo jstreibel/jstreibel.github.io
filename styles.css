@@ -65,8 +65,16 @@ a:hover {
 }
 
 .page-home .tagline {
-  margin: 0.8rem 0 1.4rem;
-  font-size: clamp(1.05rem, 2.5vw, 1.45rem);
+  margin: 0.2rem 0 1.4rem;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: #0a5f7a;
+  font-weight: 700;
+}
+
+.page-home .welcome-note {
+  margin: 0.55rem 0 0.6rem;
+  font-size: clamp(1.3rem, 4.5vw, 2rem);
+  line-height: 1.15;
   color: var(--bg-grass);
   font-weight: 700;
 }
