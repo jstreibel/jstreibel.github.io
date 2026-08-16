@@ -1,21 +1,27 @@
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-import AboutPage from './pages/AboutPage';
-import NotesPage from './pages/NotesPage';
+import HelloPage from './pages/personal/HelloPage';
+import NotesPage from './pages/personal/NotesPage';
+
+import AboutPage from './pages/professional/AboutPage';
+import WorkPage from './pages/professional/WorkPage';
+
 import SiteLayout from './components/SiteLayout';
-import WorkPage from './pages/WorkPage';
 
 export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route element={<SiteLayout />}>
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/work" element={<WorkPage/> } />
-          <Route path="/notes" element={<NotesPage />} />
+        <Route element={<SiteLayout variant="personal" />}>
+          <Route path="/personal/hello" element={<HelloPage />} />
+          <Route path="/personal/notes" element={<NotesPage />} />
         </Route>
-        <Route path="/" element={<Navigate replace to="/about" />} />
-        <Route path="*" element={<Navigate replace to="/about" />} />
+        <Route element={<SiteLayout variant="professional" />}>
+          <Route path="/professional/about" element={<AboutPage />} />
+          <Route path="/professional/work" element={<WorkPage />} />
+        </Route>
+        <Route path="/" element={<Navigate replace to="/personal/hello" />} />
+        <Route path="*" element={<Navigate replace to="/personal/hello" />} />
       </Routes>
     </HashRouter>
   );
