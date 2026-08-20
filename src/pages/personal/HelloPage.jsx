@@ -1,6 +1,6 @@
 export default function HelloPage() {
   return <>
-    <h1>Greetings</h1>
+    <h1>Hello</h1>
     and welcome.
 
     <br></br><br></br>

@@ -8,33 +8,48 @@ const linkGroups = [
         name: "John Carlos Baez",
         url: "https://johncarlosbaez.wordpress.com/",
         description:
-          "In particular his posts on information theory.",
+          "in particular his posts on information theory.",
       },
       {
         name: "Paul Graham",
         url: "https://paulgraham.com",
-        description: "Discovered his existence today (Aug 19th, 2026)"
       },
       {
         name: "Andrej Karpathy",
         url: "https://karpathy.ai/",
         description: "I have the impression he knew there was a way.",
       },
+
     ],
   },
+  {
+    title: "Social | News",
+    links: [
+      {
+        name: "Hacker News",
+        url: "https://news.ycombinator.com/",
+      },
+    ],
+  },
+  {
+    title: "Other",
+    links: [
+      {
+        name: "Pure nostalgia",
+        url: "https://web.archive.org/web/19961221231010/http://lucasarts.com/"
+      }
+    ],
+  }
 ];
 
 function LinkItem({ name, url, description }) {
   const hostname = new URL(url).hostname;
 
   return (
-    <li>
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {name}
-      </a>{" "}
-      <span>— {hostname}</span>
-      {description && <p>{description}</p>}
-    </li>
+    <p>
+      <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
+      {description && <span>  {description}</span>}
+    </p>
   );
 }
 
