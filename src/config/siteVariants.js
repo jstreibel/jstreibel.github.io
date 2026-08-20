@@ -11,6 +11,7 @@ export const siteVariants = {
     navigation: [
       { label: 'Hi', to: '/personal/hello' },
       { label: 'Random notes', to: '/personal/notes' },
+      { label: 'Links', to: '/personal/links' },
     ],
   },
   professional: {

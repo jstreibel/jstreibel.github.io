@@ -7,6 +7,7 @@ import AboutPage from './pages/professional/AboutPage';
 import WorkPage from './pages/professional/WorkPage';
 
 import SiteLayout from './components/SiteLayout';
+import LinksPage from './pages/personal/LinksPage';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route element={<SiteLayout variant="personal" />}>
           <Route path="/personal/hello" element={<HelloPage />} />
           <Route path="/personal/notes" element={<NotesPage />} />
+          <Route path="/personal/links" element={<LinksPage />} />
         </Route>
         <Route element={<SiteLayout variant="professional" />}>
           <Route path="/professional/about" element={<AboutPage />} />
