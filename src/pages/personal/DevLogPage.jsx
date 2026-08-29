@@ -8,7 +8,11 @@ const entries = [
     body: `
 ## 2026-08-29
 
-### 17:29 PM BRT
+### 7:34 PM BRT
+#### Opened an Issue in Sonic Visualiser GitHub
+Sonic Visualiser is a pretty handy app pretty for the task at hand (audio annotation). But found an issue while opening FLAC files output by FFmpeg. Opened [Issue#125](https://github.com/sonic-visualiser/sonic-visualiser/issues/125) in their GitHub repo.
+
+### 5:29 PM BRT
 I need a way to annotate the data. I just realized that's a fully manual endeavor. The only way I see is listening to every recording and labeling it manually. Sounds boring, but I don't see a workaround. People get paid well for annotating data. It sits at the core of machine learning.
 
 On to annotating.

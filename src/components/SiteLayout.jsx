@@ -6,14 +6,18 @@ export default function SiteLayout({ variant = 'personal' }) {
   const site = siteVariants[variant];
 
   return (
-    <>
-      <nav className='page-nav' aria-label='Primary'>
-        {site.navigation.map(({ label, to }) => (
-          <Link key={to} to={to}>
-            {label}
-          </Link>
-        ))}
-      </nav>
+    <div className={`site-layout site-layout--${variant}`}>
+      <aside className="page-rail">
+        {site.mainImage && <img className="main-image" src={site.mainImage} alt="" />}
+
+        <nav className="page-nav" aria-label="Primary">
+          {site.navigation.map(({ label, to }) => (
+            <Link key={to} to={to}>
+              {label}
+            </Link>
+          ))}
+        </nav>
+      </aside>
 
       <Link className="site-version-link"
         to={variant === 'personal' ? '/professional/about' : '/personal/about'}>
@@ -23,11 +27,7 @@ export default function SiteLayout({ variant = 'personal' }) {
       <main className="page-content">
         <Outlet />
       </main>
-      <div className="page-rule" aria-hidden="true" />
-
-      {site.mainImage && <img className="main-image" src={site.mainImage} alt="" />}
       {site.cornerImage && <img className="corner-image" src={site.cornerImage} alt="" />}
-
-    </>
+    </div>
   );
 }
