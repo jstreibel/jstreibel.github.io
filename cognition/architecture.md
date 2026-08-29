@@ -6,6 +6,7 @@ The site is a small React 18 single-page application built by Vite 5.
 
 - React and React DOM
 - React Router using `HashRouter`
+- `react-markdown` renders Markdown entry bodies.
 - Redux Toolkit and React Redux are installed; the store lives under `src/app`, although the pages inspected here do not use it directly.
 - Sass provides the global stylesheet.
 
@@ -14,6 +15,7 @@ The site is a small React 18 single-page application built by Vite 5.
 - `src/main.jsx` — application entry point
 - `src/App.jsx` — route declarations
 - `src/components/SiteLayout.jsx` — shared variant-aware shell
+- `src/components/BlogEntry.jsx` — shared semantic entry renderer; see [[blog-entry-component]]
 - `src/config/siteVariants.js` — navigation and imagery for each site variant
 - `src/styles/global.scss` — global layout and visual rules
 - `src/pages/personal/` — personal pages

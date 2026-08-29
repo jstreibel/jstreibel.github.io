@@ -9,18 +9,20 @@ The personal DevLog was added in August 2026.
 - Navigation label: `DevLog`
 - Browser title: `DevLog | João Streibel`
 
-The page introduces itself as notes about things being built, learned, and figured out. Its `entries` array is currently empty, so it displays `No entries yet.`
+The page introduces itself as notes about things being built, learned, and figured out. Its first entry is timestamped August 28, 2026 at 22:02 and is titled “ML & Signal Processing - 01.” The `No entries yet.` fallback remains available when the entries array is empty.
 
-The component already maps entries to semantic `article`, `h2`, `time`, and `p` elements. Each future entry should have this shape:
+The page maps its entry data through the shared [[blog-entry-component]]. Each future entry should have this shape:
 
 ```js
 {
   date: 'YYYY-MM-DD',
+  time: 'HH:MM',
   title: 'Entry title',
+  format: 'md', // or 'html' for trusted HTML
   body: 'Entry text',
 }
 ```
 
-The rendered key combines `date` and `title`, so that pair should be unique.
+The rendered key combines `date`, `time`, and `title`, allowing multiple entries on the same day. That combination should be unique.
 
 Related: [[routing-and-navigation]], [[page-conventions]], [[verification]].

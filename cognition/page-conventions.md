@@ -19,4 +19,6 @@ To add a navigable personal page:
 
 There is no test framework or lint script currently declared in `package.json`.
 
+Entry-oriented pages should use [[blog-entry-component]] instead of recreating `article`, heading, date, and content markup. Notes and DevLog already follow this convention.
+
 Related: [[routing-and-navigation]], [[devlog]].

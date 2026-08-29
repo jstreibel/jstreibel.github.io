@@ -12,4 +12,6 @@
 
 Pages currently do not have page-specific styles or CSS modules. New content should first reuse semantic HTML and the global layout unless a distinct visual requirement calls for new styles.
 
+The shared [[blog-entry-component]] exposes CSS hooks for entry-specific styling without requiring page-specific markup.
+
 Related: [[architecture]], [[page-conventions]].
