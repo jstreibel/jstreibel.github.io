@@ -7,7 +7,7 @@ export default function HelloPage() {
       <p>I&apos;m a software engineer, with a PhD in Physics.</p>
 
       <p>
-        My current focus is machine learning: to understand it properly, experiment and put it to work.
+        My current focus is machine learning: to understand its state-of-the art from pure graph theory all the way up to the mechanics governing their statistical properties. To experiment heavily and put it to work.
       </p>
 
       <p>
