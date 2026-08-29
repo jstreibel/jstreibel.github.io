@@ -23,6 +23,19 @@ const linkGroups = [
     ],
   },
   {
+    title: "Machine Learning",
+    links: [
+      {
+        name: "Journal of Machine Learning Research",
+        url: "https://www.jmlr.org",
+      },
+      {
+        name: "Cosmograph",
+        url: "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+      }
+    ],
+  },
+  {
     title: "Social | News",
     links: [
       {
@@ -37,7 +50,11 @@ const linkGroups = [
       {
         name: "Pure nostalgia",
         url: "https://web.archive.org/web/19961221231010/http://lucasarts.com/"
-      }
+      },
+      {
+        name: "Hand Made from Zipties",
+        url: "https://www.youtube.com/shorts/fybQMm133mc",
+      },
     ],
   }
 ];
