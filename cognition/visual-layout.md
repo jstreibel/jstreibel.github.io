@@ -14,4 +14,6 @@ Pages currently do not have page-specific styles or CSS modules. New content sho
 
 The shared [[blog-entry-component]] exposes CSS hooks for entry-specific styling without requiring page-specific markup.
 
+The personal [[hello-page]] adds narrowly scoped prose and subtle asterisk-footnote styles in the global stylesheet.
+
 Related: [[architecture]], [[page-conventions]].

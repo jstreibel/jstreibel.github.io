@@ -8,6 +8,7 @@ This is a Vite-powered React single-page site with separate personal and profess
 - [[blog-entry-component]] — shared rendering contract for Notes, DevLog, and future Blog entries
 - [[visual-layout]] — global layout and styling model
 - [[devlog]] — the DevLog page added in August 2026
+- [[hello-page]] — personal introduction and its subtle asterisk footnote pattern
 - [[verification]] — commands used to validate changes
 
 Start with [[architecture]], then follow [[routing-and-navigation]] when adding or changing a page.

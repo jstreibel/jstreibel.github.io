@@ -4,21 +4,20 @@ import BlogEntry from '../../components/BlogEntry';
 
 const entries = [
   {
-    title: 'The aggressive water pump',
     format: 'md',
     body: `
 ### 2026-08-29
 
 #### 00:46 BRT
 
-To my surprise, the C-1U didn't capture very well the lower/main frequencies (multiples of 60Hz) of the water pump. And it is producing an irritating noise on higher freq bands. I'm pretty sure its the old USB cable. The little mic has known a little too much salty sea air from the old days.
+To my surprise, the C-1U didn't capture the pump's lower/main frequencies very well (multiples of 60Hz). And it is producing an irritating noise on higher freq bands. I'm pretty sure its the old USB cable. The little mic has known a little too much salty sea air from the old days.
 
 But enough for today.
 
 ### 2026-08-28
 
 #### 23:39 BRT - first mic test
-Tried recording with a nice Behringer C-1U microphone I have. Initial result is full of noise on the 60Hz band. As that frequency is the same as our local power grid's, I figured it is lack of proper grounding. But who's the culprit among myriad cables? ChatGPT helped me zero in on the HDMI cable, as apparently it has an analog channel that could be leaking the hum. Not sure about that, but it suggested I use DP instead. Worked like a charm.
+Tried recording with an old Behringer C-1U microphone. Initial result is noise-saturated on the 60Hz band. As that's also our power grid's frequency, I figured it is lack of proper grounding. But who's the culprit among a myriad cables? ChatGPT helped me zero in on the HDMI cable, as apparently it has an analog channel that could be leaking the hum. Not sure about that, but it suggested I use DP instead. Worked like a charm.
 
 #### 22:02 BRT (10:02 PM UTC-3)
 
@@ -45,7 +44,7 @@ export default function DevLogPage() {
   return (
     <>
       <h1>DevLog</h1>
-      <p>Notes on things I&apos;m building, learning, and figuring out.</p>
+      <p>Notes on things I&apos;m building, learning, and figuring out. Latest posts first. </p>
 
       {entries.length === 0 ? (
         <p>No entries yet.</p>
@@ -53,7 +52,6 @@ export default function DevLogPage() {
         entries.map(({ date, time, title, body, format }) => (
           <BlogEntry
             key={`${date}-${time}-${title}`}
-            title={title}
             body={body}
             format={format}
           />

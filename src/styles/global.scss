@@ -98,6 +98,54 @@ gap: 0.75rem;
   padding: 8vh 25vw;
 }
 
+.hello-page > p {
+  max-width: 42rem;
+  margin: 0 0 1.4rem;
+  line-height: 1.65;
+}
+
+.footnote-reference {
+  margin-left: 0.12em;
+  font-size: 0.72em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.footnote-reference a,
+.footnote-backlink {
+  color: var(--color-inactive);
+  text-decoration: none;
+}
+
+.footnote-reference a:hover,
+.footnote-reference a:focus-visible,
+.footnote-backlink:hover,
+.footnote-backlink:focus-visible {
+  color: var(--color-red);
+}
+
+.footnote {
+  display: flex;
+  gap: 0.55rem;
+  max-width: 32rem;
+  margin-top: 3rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-black) 25%, transparent);
+  color: var(--color-inactive);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.footnote-mark {
+  flex: 0 0 auto;
+  color: var(--color-black);
+}
+
+.footnote-backlink {
+  margin-left: 0.15em;
+  font-size: 0.9em;
+}
+
 button,
 input,
 textarea,
