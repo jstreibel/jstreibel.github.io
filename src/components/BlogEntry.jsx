@@ -1,5 +1,7 @@
 import { useId } from 'react';
+import rehypeHighlight from 'rehype-highlight';
 import Markdown from 'react-markdown';
+import 'highlight.js/styles/github-dark.css';
 
 function EntryBody({ body, format, children }) {
   if (body === undefined) {
@@ -10,7 +12,7 @@ function EntryBody({ body, format, children }) {
     return <div dangerouslySetInnerHTML={{ __html: body }} />;
   }
 
-  return <Markdown>{body}</Markdown>;
+  return <Markdown rehypePlugins={[rehypeHighlight]}>{body}</Markdown>;
 }
 
 export default function BlogEntry({

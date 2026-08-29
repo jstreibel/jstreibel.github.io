@@ -29,7 +29,7 @@ When both date and time are present, the component emits a combined HTML datetim
 
 The component generates a stable React `useId` value to connect each `article`'s `aria-labelledby` attribute to its heading. It exposes `blog-entry` and `blog-entry-content` class names for future styling, but they currently have no dedicated rules in `global.scss`.
 
-Markdown bodies are rendered by `react-markdown`. HTML bodies use React's `dangerouslySetInnerHTML`, so `format="html"` is only safe for trusted, repository-authored content. Sanitize HTML first if entry content ever comes from users or another untrusted source. If both `body` and `children` are provided, `body` takes precedence.
+Markdown bodies are rendered by `react-markdown`. Fenced code blocks are syntax-highlighted by `rehype-highlight`/`highlight.js` using the GitHub Dark theme; declare the language after the opening fence, such as `bash`. HTML bodies use React's `dangerouslySetInnerHTML`, so `format="html"` is only safe for trusted, repository-authored content. Sanitize HTML first if entry content ever comes from users or another untrusted source. If both `body` and `children` are provided, `body` takes precedence.
 
 Notes and DevLog each keep their own entry data and empty state. This component owns presentation only; it does not own storage, ordering, filtering, or routing.
 

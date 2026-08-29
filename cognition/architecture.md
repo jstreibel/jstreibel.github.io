@@ -7,6 +7,7 @@ The site is a small React 18 single-page application built by Vite 5.
 - React and React DOM
 - React Router using `HashRouter`
 - `react-markdown` renders Markdown entry bodies.
+- `rehype-highlight` and `highlight.js` add language-aware syntax coloring to fenced code blocks.
 - Redux Toolkit and React Redux are installed; the store lives under `src/app`, although the pages inspected here do not use it directly.
 - Sass provides the global stylesheet.
 
