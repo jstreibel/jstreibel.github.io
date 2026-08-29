@@ -10,7 +10,7 @@ export const siteVariants = {
     cornerImage: calvinImage,
     navigation: [
       { label: 'Hi', to: '/personal/hello' },
-      { label: 'Random notes', to: '/personal/notes' },
+      // { label: 'Random notes', to: '/personal/notes' },
       { label: 'DevLog', to: '/personal/devlog' },
       { label: 'Links', to: '/personal/links' },
     ],
