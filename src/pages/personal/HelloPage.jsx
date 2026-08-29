@@ -4,7 +4,7 @@ export default function HelloPage() {
       <h1>Hello</h1>
       <p>and welcome.</p>
 
-      <p>I&apos;m a software engineer for 15 years, with a PhD in Physics.</p>
+      <p>I&apos;m a software engineer, with a PhD in Physics.</p>
 
       <p>
         My current focus is machine learning: to understand it properly, experiment and put it to work.

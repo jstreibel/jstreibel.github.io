@@ -21,7 +21,7 @@ Tried recording with an old Behringer C-1U microphone. Initial result is noise-s
 
 #### 22:02 BRT (10:02 PM UTC-3)
 
-In the building I live there\'s a pump that takes volumes of water against gravity to a tank some 15 stories up. As you might guess, the pump is noisy and power hungry (moving tons of water up a distance takes a *lot* of energy). Worst off, it turns on/off depending solely on tank level and does not take into account whether it is late hours and/or grid energy price.
+In the building I live there\'s a pump that takes volumes of water against gravity to a tank some 15 stories up. As you might guess, the pump is noisy and power hungry as moving tons of water up a distance takes a *lot* of energy and stress. Worst off, it turns on/off depending solely on tank level and does not take into account whether it is late hours and/or grid energy price.
 
 I'd love to have extensive (ish) data on whether the pump is on or off, so I can compare it against allowed noise time and energy price. Three options popped in my head:
 1. **Manual approach** (chaotic): take notes by hand, based on my hearing.
