@@ -16,7 +16,7 @@ Routes are declared in `src/App.jsx` under two instances of the shared `SiteLayo
 
 The root route and all unknown routes redirect to `/personal/hello`. Because the app uses `HashRouter`, browser-facing URLs contain a hash, such as `#/personal/devlog`.
 
-Navigation is data-driven. `src/config/siteVariants.js` defines a `navigation` array for each variant, and `SiteLayout` maps that array to React Router `Link` elements. A page intended to appear in navigation therefore needs both a route in `App.jsx` and an item in `siteVariants.js`.
+Navigation is data-driven. `src/config/siteVariants.js` defines a `navigation` array for each variant, and `SiteLayout` maps that array to React Router `NavLink` elements. The link matching the current route receives an `active` class and uses the site's muted red. A page intended to appear in navigation therefore needs both a route in `App.jsx` and an item in `siteVariants.js`.
 
 ## Known inconsistency
 

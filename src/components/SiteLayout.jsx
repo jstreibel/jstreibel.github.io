@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 import { siteVariants } from '../config/siteVariants';
 
@@ -12,9 +12,9 @@ export default function SiteLayout({ variant = 'personal' }) {
 
         <nav className="page-nav" aria-label="Primary">
           {site.navigation.map(({ label, to }) => (
-            <Link key={to} to={to}>
+            <NavLink key={to} to={to} className={({ isActive }) => isActive ? 'active' : undefined}>
               {label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </aside>

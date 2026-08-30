@@ -18,6 +18,8 @@ The layout uses shared fluid variables for the rail, its gutter, the corner imag
 
 At `32rem` or narrower, the same composition scales down: rail gutters, Calvin, navigation text, and the version link become smaller, but none of the signature elements is hidden. Embedded media is constrained to content width, and entry code blocks scroll horizontally instead of widening the page.
 
+Long-form entry content is capped at `65ch` for a comfortable reading measure, while fenced code blocks retain the full available content width. The active navigation link uses `--color-red` as a restrained orientation cue.
+
 Pages currently do not have page-specific styles or CSS modules. New content should first reuse semantic HTML and the global layout unless a distinct visual requirement calls for new styles.
 
 The shared [[blog-entry-component]] exposes CSS hooks for entry-specific styling without requiring page-specific markup.

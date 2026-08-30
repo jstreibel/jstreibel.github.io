@@ -108,6 +108,10 @@ body {
   overflow-wrap: anywhere;
 }
 
+.page-nav a.active {
+  color: var(--color-red);
+}
+
 .page-content {
   grid-column: 2;
   grid-row: 1;
@@ -173,6 +177,10 @@ body {
   max-width: 100%;
   overflow-x: auto;
   border-radius: 0.3rem;
+}
+
+.blog-entry-content > :not(pre) {
+  max-width: 65ch;
 }
 
 .blog-entry-content code {
