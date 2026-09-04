@@ -13,6 +13,7 @@ export const siteVariants = {
       // { label: 'Random notes', to: '/personal/notes' },
       { label: 'DevLog', to: '/personal/devlog' },
       { label: 'Links', to: '/personal/links' },
+      { label: 'Reach', to: '/personal/reach' },
     ],
   },
   professional: {

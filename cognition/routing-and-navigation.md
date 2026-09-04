@@ -8,6 +8,7 @@ Routes are declared in `src/App.jsx` under two instances of the shared `SiteLayo
 - `/personal/notes` → `NotesPage`
 - `/personal/devlog` → `DevLogPage`
 - `/personal/links` → `LinksPage`
+- `/personal/reach` → `ReachPage`
 
 ## Professional routes
 

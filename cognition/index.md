@@ -9,6 +9,7 @@ This is a Vite-powered React single-page site with separate personal and profess
 - [[visual-layout]] — global layout and styling model
 - [[devlog]] — the DevLog page added in August 2026
 - [[hello-page]] — personal introduction and its subtle asterisk footnote pattern
+- [[reach-page]] — contact page and placeholder details
 - [[verification]] — commands used to validate changes
 - [[github-pages-deployment]] — Vite deployment workflow and Pages source configuration
 

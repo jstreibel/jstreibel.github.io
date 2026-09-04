@@ -3,6 +3,7 @@ import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HelloPage from './pages/personal/HelloPage';
 import NotesPage from './pages/personal/NotesPage';
 import DevLogPage from './pages/personal/DevLogPage';
+import ReachPage from './pages/personal/ReachPage';
 
 import AboutPage from './pages/professional/AboutPage';
 import WorkPage from './pages/professional/WorkPage';
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/personal/notes" element={<NotesPage />} />
           <Route path="/personal/devlog" element={<DevLogPage />} />
           <Route path="/personal/links" element={<LinksPage />} />
+          <Route path="/personal/reach" element={<ReachPage />} />
         </Route>
         <Route element={<SiteLayout variant="professional" />}>
           <Route path="/professional/about" element={<AboutPage />} />

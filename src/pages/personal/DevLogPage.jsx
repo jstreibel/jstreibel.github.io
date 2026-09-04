@@ -6,11 +6,20 @@ const entries = [
   {
     format: 'md',
     body: `
+
+## 2026-08-30
+
+### 1:27 PM BRT
+
+
 ## 2026-08-29
 
 ### 7:34 PM BRT
-#### Opened an Issue in Sonic Visualiser GitHub
-Sonic Visualiser is a pretty handy app pretty for the task at hand (audio annotation). But found an issue while opening FLAC files output by FFmpeg. Opened [Issue#125](https://github.com/sonic-visualiser/sonic-visualiser/issues/125) in their GitHub repo.
+#### Found bug in Sonic Visualiser
+I'm using Sonic Visualiser for audio navigation and annotation.
+But found an issue while opening FLAC files output by FFmpeg. Opened [Issue#125](https://github.com/sonic-visualiser/sonic-visualiser/issues/125) in their GitHub repo.
+
+Note: if my time was an abundant resource I'd adhd into fixing the issue. Workaround: take advantage of lossness nature of FLAC format and having FFmpeg decode-encode each file with proper stamps.
 
 ### 5:29 PM BRT
 I need a way to annotate the data. I just realized that's a fully manual endeavor. The only way I see is listening to every recording and labeling it manually. Sounds boring, but I don't see a workaround. People get paid well for annotating data. It sits at the core of machine learning.
@@ -18,7 +27,7 @@ I need a way to annotate the data. I just realized that's a fully manual endeavo
 On to annotating.
 
 ### 4:49 PM BRT
-Here's the \`ffmpeg\` args being used:
+\`ffmpeg\` args used for first data collection run:
 
 \`\`\`bash
 ffmpeg -f pulse \\
@@ -57,7 +66,9 @@ FFmpeg seems like the natural choice, particularly if Gepetto (ChatGPT) helps me
 
 ### 00:46 BRT
 
-To my surprise, the C-1U didn't capture the pump's lower/main frequencies very well (multiples of 60Hz). And it is producing an irritating noise on higher freq bands. I'm pretty sure its the old USB cable. The little mic has known a little too much salty sea air from the old days.
+To my surprise, the C-1U didn't capture the pump's lower/main frequencies very well (multiples of 60Hz). Either that or I'm getting something wrong in my readings of audio data. Also, it is producing noise on higher freq bands. I'm pretty sure its the old USB cable. Note: perhaps the little mic has known a little too much salty sea air from the old days.
+
+Decision: I'll come back to C-1U later. Workaround: for data V1 I'll stick to my Logitech streamcam.
 
 But enough for today.
 
@@ -92,7 +103,7 @@ export default function DevLogPage() {
   return (
     <>
       <h1>DevLog</h1>
-      <p>Notes on things I&apos;m building, learning, and figuring out. Latest posts first. </p>
+      <p>Notes on things I&apos;m building, learning, figuring out. Latest posts first. </p>
 
       {entries.length === 0 ? (
         <p>No entries yet.</p>
