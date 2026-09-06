@@ -12,6 +12,11 @@ const contacts = [
     text: 'linkedin.com/in/your-profile',
   },
   {
+    label: 'HuggingFace',
+    href: 'https://huggingface.co/jstreibel',
+    text: 'huggingface.co/jstreibel',
+  },
+  {
     label: 'X',
     href: 'https://x.com/j_streibel',
     text: 'x.com/j_streibel',
