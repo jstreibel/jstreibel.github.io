@@ -9,7 +9,7 @@ const contacts = [
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/jstreibel',
-    text: 'linkedin.com/in/your-profile',
+    text: 'linkedin.com/in/jstreibel',
   },
   {
     label: 'HuggingFace',
